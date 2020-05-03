@@ -3,7 +3,7 @@ var instasearchApp = new Vue({
 	el: '#app-instasearch',
 	
 	data: { 
-		authorNameSearchString: "",
+		nameSearchString: "",
 		photoFeed: null
 	},
 	
@@ -21,16 +21,16 @@ var instasearchApp = new Vue({
         filteredPhotoFeed: function () {
 			
             var photos = this.photoFeed;
-            var authorNameSearchString = this.authorNameSearchString;
+            var nameSearchString = this.nameSearchString;
 
-            if(!authorNameSearchString){
+            if(!nameSearchString){
                 return photos;
             }
 
-            searchString = authorNameSearchString.trim().toLowerCase();
+            searchString = nameSearchString.trim().toLowerCase();
 
             photos = photos.filter(function(item){
-                if(item.name.toLowerCase().indexOf(authorNameSearchString) !== -1){
+                if(item.name.toLowerCase().indexOf(nameSearchString) !== -1){
                     return item;
                 }
             })
