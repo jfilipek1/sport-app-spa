@@ -41,7 +41,7 @@ th{
 }
 
 .wpos td{
-	color: #77ff21;
+	color: #ff7b21;
 }
 
 table .col{
@@ -49,7 +49,7 @@ table .col{
 }
 
 .wpos:hover{
-	background-color: #77ff21;
+	background-color: #ff7b21;
 }
 
 .wpos:hover td{
