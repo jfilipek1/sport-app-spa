@@ -33,11 +33,13 @@
 		<transition-group tag="ul" name="list-animation">
 			
 			<li class="photo photo-animated" v-for="photo in filteredPhotoFeed" v-bind:key="photo.team_id">
-				<img v-bind:src="photo.logo" />
+				<img v-bind:src="photo.logo" /><br>
 				<span class="name">{{ photo.name }}</span><br>
 				<span class="founded">Rok założenia: {{ photo.founded }}</span><br>
 				<span class="venue_name">Stadion: {{ photo.venue_name }}</span><br>
-				<span class="venue_city">{{ photo.venue_city }}</span>
+				<span class="venue_city">{{ photo.venue_city }}</span><br>
+				Statystyki:<br>
+				<span class="matches_won">Wygrane mecze: {{ photo.matches_won }}</span><br>
 			</li>
 			
 		</transition-group>
