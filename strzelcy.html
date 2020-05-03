@@ -52,34 +52,7 @@
       </tbody>
     </table>
   </div><center>
-<!-- tu miał być parser z rapid-api, ale ja zawszse miałem bład w konsoli, że nie kupiłem pakiet żeby korzystać z tego api.
- <script>
-    var app = new Vue({
-  el: '#app',
-  data: {
-    topscorers: []
-  },
-  created() {
-    fetch("https://sportsop-soccer-sports-open-data-v1.p.rapidapi.com/v1/leagues/%7Bleague_slug%7D/seasons/%7Bseason_slug%7D/topscorers", {
-        "method": "GET",
-        "headers": {
-          "x-rapidapi-host": "sportsop-soccer-sports-open-data-v1.p.rapidapi.com",
-          "x-rapidapi-key": "4345984802msh66e6938db04b178p12dea9jsn83a6f1683119"
-        }
-      })
-      .then(responseJSON => {
-        return responseJSON.json()
-      })
-      .then(response => {
-      	this.topscorers = response.data.topsorers
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }
-})
-</script>
- -->
+
  
 <script>
     var app = new Vue({
